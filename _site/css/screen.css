@@ -219,3 +219,7 @@ nav .editor-link:hover, .editor-link .btn:hover, nav .nav-open nav .editor-link:
 .cms-editor-active .editor-link { display: block; }
 
 .cms-editor-active nav .editor-link { display: inline; }
+
+.examples { padding: 0; list-style: none; }
+.examples li { margin: 96px 0; }
+.examples li h3 { margin-bottom: 32px; }
