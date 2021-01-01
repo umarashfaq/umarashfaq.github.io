@@ -1,0 +1,20 @@
+---
+title: Examples
+description: >-
+    Here are some of the example diagrams that can be used for getting started.
+---
+
+<ul class="staff">
+	{% for e in site.examples %}
+	<li>
+		<h2>{{e.title}}</h2>
+		<div>
+			<img
+				src="{{ site.baseurl }}/images/{{ e.image }}"
+				alt="{{ e.title }}"
+				class="screenshot editable"
+			/>
+		</div>
+	</li>
+	{% endfor %}
+</ul>
