@@ -9,6 +9,9 @@
       - name: Report a problem
         link: https://forms.gle/j4ipyLpniz4syPas8
         new_window: true
+      - name: Share feedback
+        link: https://forms.gle/yB1L17Bvzs7ALYV57
+        new_window: true
       - name: Discuss on Discord
         link: https://discord.gg/JMnNhDs3
         new_window: true
