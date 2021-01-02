@@ -59,155 +59,99 @@
 
 			</div>
 		</header>
-		<div class="content">
+		<div class="content paper">
 	<section class="page">
 		<div class="container ">
 			
-				<h2>Docs</h2>
-			
-			
-				<p class="subtext">Clarity syntax documentation</p>
-			
-			<p>
-	Clarity is dead simple to use, and most likely you would not need to refer
-	docs once you get a hang of it. Here are some of the key concepts:
-</p>
-<h2>Key Concepts</h2>
-<ul>
-	<li>
-		<h4>Lines as sequence of boxes</h4>
+			<h1>Docs</h1>
+			 
+			<p class="subtext">Clarity syntax documentation</p>
+			 <article class="docs">
+	<section class="docs-summary">
 		<p>
-			Each line of text, as long as it has text, is rendered as a box.
-			Multiple lines are rendered as sequence of boxes, connected by
-			arrows. At this point, the diagram flows from top to bottom.
+			Clarity is dead simple to use, and most likely you would not need to
+			refer docs once you get a hang of it. Here are some of the key
+			concepts:
 		</p>
-	</li>
-	<li>
-		<h4>Hashtags for special behavior</h4>
-		<p>
-			Hashtags (a.k.a. directives) can be dropped on any line for special
-			behavior. For example, if you want to make round corners out of an
-			entry box, simply drop #enter directive anywhere on the line. It
-			does not matter where a directive is placed in a line. See
-			"Directives" section below for list of available directives.
-		</p>
-	</li>
-	<li>
-		<h4>Indentation for groups</h4>
-		<p>
-			Indentation is typically used to group a number of statements
-			together. For example, see the usage of #group and #if directives.
-		</p>
-	</li>
-	<li>
-		<h4>Comments</h4>
-		<p>
-			Clarity supports C style comments with double forward slashes.
-			Anything in comments is ignored.
-		</p>
-	</li>
-</ul>
+	</section>
+	<section class="docs-keyconcepts">
+		<h2>Key Concepts</h2>
+		<ul>
+			<li>
+				<h3>Lines as sequence of boxes</h3>
+				<p>
+					Each line of text, as long as it has text, is rendered as a
+					box. Multiple lines are rendered as sequence of boxes,
+					connected by arrows. At this point, the diagram flows from
+					top to bottom.
+				</p>
+			</li>
+			<li>
+				<h3>Hashtags for special behavior</h3>
+				<p>
+					Hashtags (a.k.a. directives) can be dropped on any line for
+					special behavior. For example, if you want to make round
+					corners out of an entry box, simply drop #enter directive
+					anywhere on the line. It does not matter where a directive
+					is placed in a line. See "Directives" section below for list
+					of available directives.
+				</p>
+			</li>
+			<li>
+				<h3>Indentation for groups</h3>
+				<p>
+					Indentation is typically used to group a number of
+					statements together. For example, see the usage of #group
+					and #if directives.
+				</p>
+			</li>
+			<li>
+				<h3>Comments</h3>
+				<p>
+					Clarity supports C style comments with double forward
+					slashes. Anything in comments is ignored.
+				</p>
+			</li>
+		</ul>
+	</section>
 
-<h2>Directives</h2>
-<ul class="staff">
-	
-	<li>
-		<div class="square-image">
-			<img
-				src="#enter
-"
-				alt="#enter"
-			/>
-		</div>
-		<div class="name">
-			<a target="_blank" href="https://twitter.com/"
-				>#enter</a
-			>
-		</div>
-		<div class="position">Marks an entry node. The rendered box has rounded corners.</div>
-	</li>
-	
-	<li>
-		<div class="square-image">
-			<img
-				src="#exit
-"
-				alt="#exit"
-			/>
-		</div>
-		<div class="name">
-			<a target="_blank" href="https://twitter.com/"
-				>#exit</a
-			>
-		</div>
-		<div class="position">Marks an exit node. The rendered box has rounded corners.</div>
-	</li>
-	
-	<li>
-		<div class="square-image">
-			<img
-				src="#goto:{string}
-"
-				alt="#goto:{string}"
-			/>
-		</div>
-		<div class="name">
-			<a target="_blank" href="https://twitter.com/"
-				>#goto:{string}</a
-			>
-		</div>
-		<div class="position">Links a node to another node. For example, to go to the node 'hello', user can write #goto:hello.</div>
-	</li>
-	
-	<li>
-		<div class="square-image">
-			<img
-				src="#group
-"
-				alt="#group"
-			/>
-		</div>
-		<div class="name">
-			<a target="_blank" href="https://twitter.com/"
-				>#group</a
-			>
-		</div>
-		<div class="position">Statements indented under a #group statement, are wrapped in a box. Any words in the #group statement, make up the heading of the wrapper box in the diagram.</div>
-	</li>
-	
-	<li>
-		<div class="square-image">
-			<img
-				src="#id:{string}
-"
-				alt="#id:{string}"
-			/>
-		</div>
-		<div class="name">
-			<a target="_blank" href="https://twitter.com/"
-				>#id:{string}</a
-			>
-		</div>
-		<div class="position">Assigns a unique ID to a node. For example, to assign an ID 'hello' to a node, user can write #id:hello.</div>
-	</li>
-	
-	<li>
-		<div class="square-image">
-			<img
-				src="#if
-"
-				alt="#if"
-			/>
-		</div>
-		<div class="name">
-			<a target="_blank" href="https://twitter.com/"
-				>#if</a
-			>
-		</div>
-		<div class="position">Forks a node into two logical pathways. Statements indented underneath #if statement go under the 'Yes' pathway, whereas the succeeding statements on the same indented level as #if statement, go under the 'No' pathway.</div>
-	</li>
-	
-</ul>
+	<section class="docs-directives">
+		<h2>Directives</h2>
+		<ul>
+			
+			<li>
+				<h3>#enter</h3>
+				<p>Marks an entry node. The rendered box has rounded corners.</p>
+			</li>
+			
+			<li>
+				<h3>#exit</h3>
+				<p>Marks an exit node. The rendered box has rounded corners.</p>
+			</li>
+			
+			<li>
+				<h3>#goto:{string}</h3>
+				<p>Links a node to another node. For example, to go to the node 'hello', user can write #goto:hello.</p>
+			</li>
+			
+			<li>
+				<h3>#group</h3>
+				<p>Statements indented under a #group statement, are wrapped in a box. Any words in the #group statement, make up the heading of the wrapper box in the diagram.</p>
+			</li>
+			
+			<li>
+				<h3>#id:{string}</h3>
+				<p>Assigns a unique ID to a node. For example, to assign an ID 'hello' to a node, user can write #id:hello.</p>
+			</li>
+			
+			<li>
+				<h3>#if</h3>
+				<p>Forks a node into two logical pathways. Statements indented underneath #if statement go under the 'Yes' pathway, whereas the succeeding statements on the same indented level as #if statement, go under the 'No' pathway.</p>
+			</li>
+			
+		</ul>
+	</section>
+</article>
 
 		</div>
 	</section>
